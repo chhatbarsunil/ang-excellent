@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
+## NgRx
+https://ngrx.io/guide/store/install
+https://v14.ngrx.io/
+
+ng add @ngrx/store@14 
+ng add @ngrx/effects@14 
+ng add @ngrx/router-store@14 
+ng add @ngrx/entity@14
+ng add @ngrx/component-store@14
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
