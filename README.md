@@ -12,6 +12,8 @@ ng add @ngrx/router-store@14
 ng add @ngrx/entity@14
 ng add @ngrx/component-store@14
 
+## Stack Blitz example counter feature example of ngrx
+https://stackblitz.com/angular/ybkjvpbengb?file=src%2Fapp%2Fapp.module.1.ts,src%2Fapp%2Fcounter.reducer.ts
 
 ## Development server
 

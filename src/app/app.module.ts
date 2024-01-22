@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StoreModule } from '@ngrx/store';
+import { SharedModule } from './shared/shared-module/shared.module';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './NgRx/counter/counter.reducer';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({}, {}),
+    SharedModule,
+    StoreModule.forRoot({count:counterReducer}),
     EffectsModule.forRoot([]),
     StoreRouterConnectingModule.forRoot()
   ],

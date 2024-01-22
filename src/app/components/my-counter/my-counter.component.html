@@ -1,0 +1,17 @@
+<p>Welcome Sunil Chhatbar!</p>
+
+
+<h1>Current Count async approach without subscribing:
+  {{ count$ | async }}</h1>
+  <br>
+  <h1>Current Count : {{ count}}</h1>
+  <br>
+  <div>Current Count Subscribed again same observable: Multiple subscription of same count: {{ count2}}</div>
+  <br>
+  <button id="increment" (click)="increment()">Increment</button>
+  <br>
+<button id="decrement" (click)="decrement()">Decrement</button>
+<br>
+<button id="reset" (click)="reset()">Reset Counter</button>
+<br>
+<button routerLink="/dashboard">Dashboard</button>
